@@ -40,7 +40,8 @@ export function combatFeedback(before:Game,after:Game,action:Action):CombatFeedb
           if(actualDamage)result.impacts.push({target:-1,kind:'slash',amount:actualDamage,delay:delay+80});
           delay+=150;
         }
-      }else if(attack.block)result.impacts.push({target:i,kind:'guard',amount:attack.block,delay,label:'护甲 +'});
+      }
+      if(attack.block)result.impacts.push({target:i,kind:'guard',amount:attack.block,delay,label:'护甲 +'});
       delay+=180;
       if(hp<=0)break;
     }
