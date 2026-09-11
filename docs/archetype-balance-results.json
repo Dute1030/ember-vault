@@ -1,0 +1,296 @@
+{
+  "date": "2026-09-11",
+  "note": "Same seeds across strategies; two-step combat policy, not human win-rate estimates.",
+  "batches": [
+    {
+      "strategy": "build1",
+      "seedStart": 5000,
+      "seedEnd": 5059,
+      "results": [
+        {
+          "lookahead": true,
+          "build": "1",
+          "job": "warden",
+          "hard": false,
+          "wins": 23,
+          "total": 60,
+          "averageFloor": 13.016666666666667,
+          "stuck": 0,
+          "winningSeed": [
+            5002,
+            5004,
+            5009
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "1",
+          "job": "warden",
+          "hard": true,
+          "wins": 10,
+          "total": 60,
+          "averageFloor": 11.283333333333333,
+          "stuck": 0,
+          "winningSeed": [
+            5004,
+            5011,
+            5012
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "1",
+          "job": "arcanist",
+          "hard": false,
+          "wins": 20,
+          "total": 60,
+          "averageFloor": 14.816666666666666,
+          "stuck": 0,
+          "winningSeed": [
+            5001,
+            5002,
+            5004
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "1",
+          "job": "arcanist",
+          "hard": true,
+          "wins": 6,
+          "total": 60,
+          "averageFloor": 13.783333333333333,
+          "stuck": 0,
+          "winningSeed": [
+            5002,
+            5004,
+            5005
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "1",
+          "job": "shade",
+          "hard": false,
+          "wins": 20,
+          "total": 60,
+          "averageFloor": 14.2,
+          "stuck": 0,
+          "winningSeed": [
+            5005,
+            5012,
+            5015
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "1",
+          "job": "shade",
+          "hard": true,
+          "wins": 9,
+          "total": 60,
+          "averageFloor": 12.05,
+          "stuck": 0,
+          "winningSeed": [
+            5011,
+            5015,
+            5016
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "build2",
+      "seedStart": 5000,
+      "seedEnd": 5059,
+      "results": [
+        {
+          "lookahead": true,
+          "build": "2",
+          "job": "warden",
+          "hard": false,
+          "wins": 14,
+          "total": 60,
+          "averageFloor": 12.75,
+          "stuck": 0,
+          "winningSeed": [
+            5004,
+            5013,
+            5016
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "2",
+          "job": "warden",
+          "hard": true,
+          "wins": 2,
+          "total": 60,
+          "averageFloor": 9.6,
+          "stuck": 0,
+          "winningSeed": [
+            5010,
+            5050
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "2",
+          "job": "arcanist",
+          "hard": false,
+          "wins": 32,
+          "total": 60,
+          "averageFloor": 14.833333333333334,
+          "stuck": 0,
+          "winningSeed": [
+            5000,
+            5001,
+            5003
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "2",
+          "job": "arcanist",
+          "hard": true,
+          "wins": 14,
+          "total": 60,
+          "averageFloor": 14.333333333333334,
+          "stuck": 0,
+          "winningSeed": [
+            5000,
+            5002,
+            5003
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "2",
+          "job": "shade",
+          "hard": false,
+          "wins": 11,
+          "total": 60,
+          "averageFloor": 14.216666666666667,
+          "stuck": 0,
+          "winningSeed": [
+            5003,
+            5004,
+            5010
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "2",
+          "job": "shade",
+          "hard": true,
+          "wins": 3,
+          "total": 60,
+          "averageFloor": 11.616666666666667,
+          "stuck": 0,
+          "winningSeed": [
+            5005,
+            5031,
+            5053
+          ]
+        }
+      ]
+    },
+    {
+      "strategy": "mixed",
+      "seedStart": 5000,
+      "seedEnd": 5059,
+      "results": [
+        {
+          "lookahead": true,
+          "build": "mixed",
+          "job": "warden",
+          "hard": false,
+          "wins": 39,
+          "total": 60,
+          "averageFloor": 14.3,
+          "stuck": 0,
+          "winningSeed": [
+            5000,
+            5003,
+            5004
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "mixed",
+          "job": "warden",
+          "hard": true,
+          "wins": 9,
+          "total": 60,
+          "averageFloor": 12.1,
+          "stuck": 0,
+          "winningSeed": [
+            5004,
+            5011,
+            5012
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "mixed",
+          "job": "arcanist",
+          "hard": false,
+          "wins": 21,
+          "total": 60,
+          "averageFloor": 14.766666666666667,
+          "stuck": 0,
+          "winningSeed": [
+            5001,
+            5004,
+            5005
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "mixed",
+          "job": "arcanist",
+          "hard": true,
+          "wins": 4,
+          "total": 60,
+          "averageFloor": 13.9,
+          "stuck": 0,
+          "winningSeed": [
+            5001,
+            5014,
+            5026
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "mixed",
+          "job": "shade",
+          "hard": false,
+          "wins": 8,
+          "total": 60,
+          "averageFloor": 12.633333333333333,
+          "stuck": 0,
+          "winningSeed": [
+            5001,
+            5002,
+            5023
+          ]
+        },
+        {
+          "lookahead": true,
+          "build": "mixed",
+          "job": "shade",
+          "hard": true,
+          "wins": 3,
+          "total": 60,
+          "averageFloor": 11.116666666666667,
+          "stuck": 0,
+          "winningSeed": [
+            5017,
+            5020,
+            5051
+          ]
+        }
+      ]
+    }
+  ]
+}
