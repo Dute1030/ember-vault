@@ -1,0 +1,11 @@
+Ember Vault characters atlas
+Generated with built-in imagegen, 2026-09-10.
+Selected source: 1254 x 1254 transparent PNG, 4 by 4 equal-cell atlas.
+
+Prompt specification:
+One transparent pixel RPG sprite atlas. Crisp 16-bit full-body battle sprites, charcoal, amber, moss green and lavender palette; no text, no grid lines, isolated transparent background.
+Row 1: gold shield knight, green dual-dagger rogue, purple staff wizard, cave goblin.
+Row 2: skeleton soldier, fire spirit, pale cyan ghost, rust executioner.
+Row 3: void knight, bone golem, Ironjaw armored gatekeeper, blind bishop.
+Row 4: ash king, treasure mimic, green slime, campfire.
+Heroes face right, enemies face left. Game uses the first 13 cells.
