@@ -10,3 +10,12 @@ test('multi-hit enemy attacks consume armor in the correct order',()=>{const g=c
 test('AOE magic affects every living enemy and does not mutate game state',()=>{const g=combat();g.enemies.push(structuredClone(g.enemies[0]));g.hand=['nova'];g.focus=3;const a={type:'play',index:0} as const,n=act(g,a),snapshot=structuredClone(n);const fx=combatFeedback(g,n,a);assert.deepEqual(fx.impacts.filter(i=>i.kind==='magic').map(i=>[i.target,i.amount]),[[0,21],[1,21]]);assert.deepEqual(n,snapshot)});
 test('invalid play produces no feedback; armor gain differs from blocked damage',()=>{const g=combat();g.hand=['guard'];g.energy=0;const a={type:'play',index:0} as const;assert.equal(combatFeedback(g,act(g,a),a).impacts.length,0);g.energy=1;assert.equal(combatFeedback(g,act(g,a),a).impacts[0].label,'护甲 +')});
 test('lethal enemy multi-hit never displays more lost health than player had',()=>{const g=combat();g.hp=3;g.block=0;g.enemies[0].pattern[0].hits=2;const a={type:'end'} as const;const fx=combatFeedback(g,act(g,a),a);assert.equal(fx.impacts.filter(i=>i.target===-1&&i.kind==='slash').reduce((n,i)=>n+i.amount,0),3)});
+test('boss guard gain matches armor retained into player turn',()=>{
+ const g=combat();g.enemies[0].boss='ashking';g.enemies[0].block=12;g.enemies[0].pattern=[{damage:0,block:16,buff:2,label:'王座庇护'}];
+ const action={type:'end'} as const;const next=act(g,action);const fx=combatFeedback(g,next,action);
+ assert.equal(next.enemies[0].block,16);assert.equal(fx.impacts.find(i=>i.target===0&&i.label==='护甲 +')?.amount,16);
+});
+test('enemy attacks that also grant armor emit both feedback types',()=>{
+ const g=combat();g.enemies[0].pattern=[{damage:5,block:8,label:'盾击'}];const action={type:'end'} as const;const next=act(g,action);const fx=combatFeedback(g,next,action);
+ assert.equal(next.enemies[0].block,8);assert.ok(fx.impacts.some(i=>i.target===-1));assert.equal(fx.impacts.find(i=>i.target===0&&i.label==='护甲 +')?.amount,8);
+});
