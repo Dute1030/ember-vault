@@ -1,0 +1,316 @@
+{
+  "before": [
+    {
+      "job": "warden",
+      "hard": false,
+      "wins": 84,
+      "total": 100,
+      "averageFloor": 14.26,
+      "stuck": 0,
+      "winningSeed": [
+        1000,
+        1001,
+        1002
+      ]
+    },
+    {
+      "job": "warden",
+      "hard": true,
+      "wins": 25,
+      "total": 100,
+      "averageFloor": 9.93,
+      "stuck": 0,
+      "winningSeed": [
+        1004,
+        1007,
+        1010
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": false,
+      "wins": 22,
+      "total": 100,
+      "averageFloor": 11.55,
+      "stuck": 0,
+      "winningSeed": [
+        1002,
+        1003,
+        1005
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": true,
+      "wins": 8,
+      "total": 100,
+      "averageFloor": 7.9,
+      "stuck": 0,
+      "winningSeed": [
+        1008,
+        1018,
+        1022
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": false,
+      "wins": 20,
+      "total": 100,
+      "averageFloor": 11.7,
+      "stuck": 0,
+      "winningSeed": [
+        1000,
+        1012,
+        1016
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": true,
+      "wins": 0,
+      "total": 100,
+      "averageFloor": 6.57,
+      "stuck": 0,
+      "winningSeed": []
+    }
+  ],
+  "after": [
+    {
+      "job": "warden",
+      "hard": false,
+      "wins": 70,
+      "total": 100,
+      "averageFloor": 13.35,
+      "stuck": 0,
+      "winningSeed": [
+        1000,
+        1004,
+        1005
+      ]
+    },
+    {
+      "job": "warden",
+      "hard": true,
+      "wins": 19,
+      "total": 100,
+      "averageFloor": 8.36,
+      "stuck": 0,
+      "winningSeed": [
+        1015,
+        1016,
+        1021
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": false,
+      "wins": 75,
+      "total": 100,
+      "averageFloor": 14.5,
+      "stuck": 0,
+      "winningSeed": [
+        1000,
+        1001,
+        1002
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": true,
+      "wins": 30,
+      "total": 100,
+      "averageFloor": 11.74,
+      "stuck": 0,
+      "winningSeed": [
+        1002,
+        1005,
+        1006
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": false,
+      "wins": 73,
+      "total": 100,
+      "averageFloor": 14.25,
+      "stuck": 0,
+      "winningSeed": [
+        1000,
+        1003,
+        1004
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": true,
+      "wins": 12,
+      "total": 100,
+      "averageFloor": 10.23,
+      "stuck": 0,
+      "winningSeed": [
+        1012,
+        1014,
+        1025
+      ]
+    }
+  ],
+  "holdoutBefore": [
+    {
+      "job": "warden",
+      "hard": false,
+      "wins": 75,
+      "total": 100,
+      "averageFloor": 13.92,
+      "stuck": 0,
+      "winningSeed": [
+        2000,
+        2001,
+        2002
+      ]
+    },
+    {
+      "job": "warden",
+      "hard": true,
+      "wins": 25,
+      "total": 100,
+      "averageFloor": 9.49,
+      "stuck": 0,
+      "winningSeed": [
+        2007,
+        2012,
+        2017
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": false,
+      "wins": 30,
+      "total": 100,
+      "averageFloor": 11.32,
+      "stuck": 0,
+      "winningSeed": [
+        2001,
+        2003,
+        2010
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": true,
+      "wins": 4,
+      "total": 100,
+      "averageFloor": 7.64,
+      "stuck": 0,
+      "winningSeed": [
+        2006,
+        2010,
+        2027
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": false,
+      "wins": 14,
+      "total": 100,
+      "averageFloor": 11.63,
+      "stuck": 0,
+      "winningSeed": [
+        2016,
+        2017,
+        2035
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": true,
+      "wins": 1,
+      "total": 100,
+      "averageFloor": 6.35,
+      "stuck": 0,
+      "winningSeed": [
+        2065
+      ]
+    }
+  ],
+  "holdoutAfter": [
+    {
+      "job": "warden",
+      "hard": false,
+      "wins": 68,
+      "total": 100,
+      "averageFloor": 13.15,
+      "stuck": 0,
+      "winningSeed": [
+        2000,
+        2001,
+        2002
+      ]
+    },
+    {
+      "job": "warden",
+      "hard": true,
+      "wins": 14,
+      "total": 100,
+      "averageFloor": 8.78,
+      "stuck": 0,
+      "winningSeed": [
+        2001,
+        2003,
+        2012
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": false,
+      "wins": 76,
+      "total": 100,
+      "averageFloor": 14.21,
+      "stuck": 0,
+      "winningSeed": [
+        2002,
+        2003,
+        2004
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": true,
+      "wins": 32,
+      "total": 100,
+      "averageFloor": 11.78,
+      "stuck": 0,
+      "winningSeed": [
+        2002,
+        2003,
+        2004
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": false,
+      "wins": 73,
+      "total": 100,
+      "averageFloor": 14.6,
+      "stuck": 0,
+      "winningSeed": [
+        2002,
+        2004,
+        2005
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": true,
+      "wins": 14,
+      "total": 100,
+      "averageFloor": 10.72,
+      "stuck": 0,
+      "winningSeed": [
+        2002,
+        2018,
+        2021
+      ]
+    }
+  ]
+}
