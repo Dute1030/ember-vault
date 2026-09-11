@@ -1,0 +1,3 @@
+import type {Game} from './game.ts';
+export type RouteEdge={fromFloor:number;fromLane:number;toFloor:number;toLane:number;state:'taken'|'available'|'future'};
+export function routeEdges(g:Game):RouteEdge[]{const edges:RouteEdge[]=[];for(let floor=-1;floor<g.route.length-1;floor++){for(const lane of floor<0?[1]:[0,1,2]){for(let next=0;next<3;next++){if(floor>=0&&Math.abs(lane-next)>1)continue;const taken=floor<g.floor&&g.path[floor+1]===next&&(floor<0||g.path[floor]===lane);const available=floor===g.floor&&(floor<0||lane===g.lane)&&g.phase==='map';if(floor<g.floor&&!taken||floor===g.floor&&floor>=0&&lane!==g.lane)continue;edges.push({fromFloor:floor,fromLane:lane,toFloor:floor+1,toLane:next,state:taken?'taken':available?'available':'future'})}}}return edges}
