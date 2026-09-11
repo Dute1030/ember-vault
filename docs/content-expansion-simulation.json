@@ -1,0 +1,82 @@
+{
+  "seedStart": 1000,
+  "runsPerJobAndDifficulty": 150,
+  "results": [
+    {
+      "job": "warden",
+      "hard": false,
+      "wins": 19,
+      "total": 150,
+      "averageFloor": 9.96,
+      "stuck": 0,
+      "winningSeed": [
+        1000,
+        1005,
+        1017
+      ]
+    },
+    {
+      "job": "warden",
+      "hard": true,
+      "wins": 3,
+      "total": 150,
+      "averageFloor": 7.033333333333333,
+      "stuck": 0,
+      "winningSeed": [
+        1051,
+        1059,
+        1084
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": false,
+      "wins": 29,
+      "total": 150,
+      "averageFloor": 11.72,
+      "stuck": 0,
+      "winningSeed": [
+        1003,
+        1005,
+        1007
+      ]
+    },
+    {
+      "job": "shade",
+      "hard": true,
+      "wins": 11,
+      "total": 150,
+      "averageFloor": 9.793333333333333,
+      "stuck": 0,
+      "winningSeed": [
+        1012,
+        1028,
+        1035
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": false,
+      "wins": 13,
+      "total": 150,
+      "averageFloor": 14,
+      "stuck": 0,
+      "winningSeed": [
+        1003,
+        1006,
+        1009
+      ]
+    },
+    {
+      "job": "arcanist",
+      "hard": true,
+      "wins": 1,
+      "total": 150,
+      "averageFloor": 11.96,
+      "stuck": 0,
+      "winningSeed": [
+        1075
+      ]
+    }
+  ]
+}
