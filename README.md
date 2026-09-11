@@ -2,15 +2,18 @@
 
 中文像素风卡牌 Roguelike。选择职业、构筑牌组、规划路线，挑战三位地牢领主。游戏完全在浏览器运行，无需数据库或 API Key。
 
-[在线游玩](https://candid-panda-4e7ff3.netlify.app) · [最新机制说明](docs/mechanics-update.md) · [难度与确认流程](docs/confirmation-difficulty.md)
+[开发日志](CHANGELOG.md) · [在线游玩](https://candid-panda-4e7ff3.netlify.app) · [最新机制说明](docs/mechanics-update.md) · [难度与确认流程](docs/confirmation-difficulty.md)
 
 > 在线站点单独部署，版本取决于最近一次 Netlify 更新；本仓库包含最新源码。
 
 ## 游戏内容
 
 - **3 个职业**：铁卫的护甲与盾击、影刃的连击与中毒、秘术师的灵力与爆发。
-- **36 张卡牌，每张两条升级路线**：强化数值，或选择减费、穿甲、群体效果、保留护甲等专精机制；升级前后对比，确认后生效。
+- **60 张卡牌，每张两条升级路线**：强化数值，或选择减费、穿甲、群体效果、保留护甲等专精机制；升级前后对比，确认后生效。
 - **15 层随机路线与 3 位 Boss**：破盾打断、祷告召唤、半血后限制连出四张牌。
+- **9 种随机事件**：随机升级、付费专精、复制卡牌、生命上限换治疗等；确认后显示实际结果。
+- **商店刷新与删牌**：刷新 20 金币起、每次加 10；删牌每店一次，整局 55 金币起、每次加 20。
+- **局外冒险记录**：按职业和难度统计通关、胜率、最快用时与最近十局，保存在当前浏览器。
 - **8 件遗物**：主界面显示已获得遗物，点击查看效果，自动生效。
 - **像素角色与战斗演出**：攻击、受击、护甲、中毒和法术反馈，伤害数字来自实际结算。
 - **独立 BGM 与音效开关**，原创合成循环曲，无外部音频请求。
@@ -61,14 +64,14 @@ npx tsc --noEmit
 node tests/simulate.ts
 ```
 
-当前包含 54 项测试。默认模拟每职业每难度 100 局，可调整：
+当前包含 78 项测试。默认模拟每职业每难度 100 局，可调整：
 
 ```bash
 SIM_RUNS=300 SIM_START=3000 node tests/simulate.ts
 SIM_RUNS=100 SIM_START=4000 SIM_TACTIC=1 node tests/simulate.ts
 ```
 
-普通模式最终三批合计 1500 局模拟，通关率 **19.4%**；其中独立验证 900 局为 18.3%，专精路线补测 300 局为 19.7%。模拟采用固定启发式，**不代表真人胜率保证**。详细配置、样本与限制见 [难度说明](docs/confirmation-difficulty.md)。
+本次扩展后固定策略模拟 900 局，标准模式 61 / 450 通关（13.6%），苦难模式 15 / 450（3.3%），均正常结束。旧版 19.4% 属于 36 张卡牌时期的数据。模拟不代表真人胜率保证，详见 [本日开发日志](docs/development-log-2026-09-11.md)。
 
 ## 项目结构
 
@@ -90,3 +93,6 @@ SIM_RUNS=100 SIM_START=4000 SIM_TACTIC=1 node tests/simulate.ts
 React 19、TypeScript、Vite/Vinext、Tailwind CSS、Base UI 与 Lucide 图标。背景及像素角色图集为本项目生成的素材；BGM 由 `scripts/generate_bgm.py` 合成，为约 43.64 秒的 D 小调循环曲，无外部采样。战斗音效使用 Web Audio 即时合成。
 
 历史数值评审见 `docs/balance-review.md`；最新规则以 `docs/confirmation-difficulty.md` 和当前代码为准。旧存档保留已经生成的敌人和角色生命，新开一局可体验完整最新数值。
+
+
+最新内容扩展：新增 24 张卡牌（各职业 6 张、通用 6 张），全部拥有强化与专精两条升级路线；随机事件扩展到 9 种。详见 [卡牌与奇遇扩展](docs/content-expansion.md)。旧版本的胜率模拟结果不代表扩展卡池后的难度。
